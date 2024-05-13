@@ -1,0 +1,54 @@
+--- Create Main App (Note: has bugs) ---
+Create react app;
+use material ui;
+
+Have styles in each component;
+use a theme across all components;
+theme should have three colours and two standard font styles;
+primary colour is blue, secondary colour is dark grey, and third colour is light grey;
+Use “useStyles” for the theme;
+
+app is a marketplace;
+the app should be responsive;
+the app should have a header;
+the header should have a logo in the top left and a menu in the top right;
+the header should have three main clickable links;
+three tabs are available in the header: marketplace, search, login;
+show sample code for each tab;
+each tab is a separate component;
+the app has a tile for each product in the marketplace;
+list of products in the marketplace are obtained using GET "/products", use popular http library to fetch data;
+use grids for tiles in marketplace;
+each tile is a separate component;
+when tile is clicked show a product view component;
+product view component is a separate component;
+product view data is obtained using GET "/products/{uuid}", use popular http library to fetch data;
+each product view has several fields: name, description, tags
+each field in product view has a field name and a field value;
+field name is all upper case, but 0.75 size of regular font, and secondary colour;
+field values are regular size and primary colour;
+each product view component has a routable page and link;
+the header, tiles, tabs, views, and marketplace should be components;
+use router for each page;
+
+--- Create MarketplaceComponent ---
+using react and material ui;
+create component called MarketplaceComponent;
+MarketplaceComponent has a title "Marketplace"
+MarketplaceComponent has many tiles in a grid;
+make the grid containing products to be responsive
+MarketplaceComponent gets data from GET "/products";
+each returned product data has a name and description;
+each product data is represented as a Card;
+each product data card has a header with the name, and a text field containing the description;
+each card has a clickable field titled "Choose" which when clicked will go to a ProductComponent;
+all clickable fields should be uppercase using the secondary colour;
+
+--- Create ProductComponent ---
+using react and material ui;
+I have an app defined in App.js
+create component called ProductComponent called by the App;
+an interface called Product contains a uuid, name, and description field
+ProductComponent takes a single parameter, called product, which is of type Product
+the product props should have an interface
+ProductComponent shows text for the product's uuid field
