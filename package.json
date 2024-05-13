@@ -1,5 +1,5 @@
 {
-  "name": "bgs-dm-marketplace-ux",
+  "name": "osc-dm-marketplace-ux",
   "version": "0.1.0",
   "private": true,
   "proxy-use-localhost": "http://127.0.0.1:8000",

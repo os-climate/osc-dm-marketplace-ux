@@ -1,4 +1,4 @@
-# bgs-dm-marketplace-ux - BGS Server for Data Mesh Registry - User Interface
+# osc-dm-marketplace-ux - BGS Server for Data Mesh Registry - User Interface
 
 This project is the Bazaar (Marketplace) for Broda Group
 Software's Ecosystem Platform. The Bazaar is a catalog, or marketplace, that
@@ -6,12 +6,12 @@ makes it easy for users to find, consume, share, and trust
 data.
 
 Full documentation is available in in the
-[bgs-dm-mesh-doc](https://github.com/brodagroupsoftware/bgs-dm-mesh-doc)
+[osc-dmmesh-doc](https://github.com/brodagroupsoftware/osc-dmmesh-doc)
 repo.
 
 This application interacts with other applications. You can run
 the full set of applications by following instructions in the
-[bgs-dm-mesh-doc](https://github.com/brodagroupsoftware/bgs-dm-mesh-doc)
+[osc-dmmesh-doc](https://github.com/brodagroupsoftware/osc-dmmesh-doc)
 repo.
 
 The remaining sections explain how to Dockerize the application
@@ -50,7 +50,7 @@ The "package.json" should look similar to the following
 (note the "proxy" tag):
 ~~~~
 {
-  "name": "bgs-dm-marketplace-ux",
+  "name": "osc-dm-marketplace-ux",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://127.0.0.1:8000",

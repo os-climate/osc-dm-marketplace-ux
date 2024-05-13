@@ -1,10 +1,10 @@
 version: '3.8'
 services:
 
-  bgs-dm-marketplace-ux:
-    image: ${DOCKERHUB_USERNAME}/bgs-dm-marketplace-ux:latest
-    # hostname: bgs-dm-marketplace-ux
-    # container_name: bgs-dm-marketplace-ux
+  osc-dm-marketplace-ux:
+    image: ${DOCKERHUB_USERNAME}/osc-dm-marketplace-ux:latest
+    # hostname: osc-dm-marketplace-ux
+    # container_name: osc-dm-marketplace-ux
     ports:
     # OUTSIDE:INSIDE
     # curl http://localhost:${SERVER_PORT}/data
