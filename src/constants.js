@@ -19,3 +19,6 @@ export const ROLE_ADMINISTRATOR = "administrator";
 // export const PROXY_URL = "http://bgssrv-dmproxy:8000"
 // export const PROXY_URL = "http://bgssrv-dmregistry:8000"
 export const PROXY_URL = "http://localhost:20000/api"
+
+
+export const TITLE_TEXT = "Arfima Marketplace"

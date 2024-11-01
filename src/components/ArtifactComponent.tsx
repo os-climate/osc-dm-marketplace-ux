@@ -194,6 +194,11 @@ const ArtifactComponent = () => {
                             View Sample Data ({sampleLink.mimetype})
                         </Link>
                     )}
+                    {artifact.service && (
+                        <Link href="#" onClick={(e) => { e.preventDefault(); openInNewWindow(artifact.service+ "/docs"); }} style={{ cursor: 'pointer', textDecoration: 'none' }}>
+                            View Sample Data ({artifact.service.mimetype})
+                        </Link>
+                    )}
                 </Box>
                 <Button variant="text" color="primary" onClick={handleAddToCart} > Add to Cart </Button>
             </Container>

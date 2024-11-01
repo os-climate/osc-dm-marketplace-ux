@@ -17,7 +17,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { getLocalStorage, KEY_ENTITYID } from '../api/localstorage';
-import { ROLE_SUBSCRIBER } from '../constants.js';
+import { ROLE_SUBSCRIBER, TITLE_TEXT } from '../constants.js';
 
 const HeaderComponent = () => {
     const [anchorEl, setAnchorEl] = useState(null);
@@ -43,7 +43,7 @@ const HeaderComponent = () => {
                 <Toolbar>
                     <Box style={{ flexGrow: 1 }}>
                         <Typography variant="h5">
-                            Climate Data Registry
+                            {TITLE_TEXT}
                         </Typography>
                         {user?.contact.email && (
                             <Typography variant="caption">

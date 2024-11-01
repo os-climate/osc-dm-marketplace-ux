@@ -28,4 +28,5 @@ export interface Artifact {
     links: Resource[];
     createtimestamp: string;
     updatetimestamp: string;
+    service: string;
 }
